@@ -11,7 +11,7 @@ for entry in feeddata.entries:
 	link = entry.link
 	raw_title = entry.title
 	title = raw_title.replace(' ','_').replace(':','')
-	line = link+','+unidecode(title)+'\n'
+	line = link+'|'+unidecode(title)+'\n'
 	print line
 	f.write(line)
 
