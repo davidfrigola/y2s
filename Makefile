@@ -1,5 +1,5 @@
 default:
-	echo "Use an option: single|list|single-audio|list-audio"
+	@echo "Use an option: help|single|list|single-audio|list-audio"
 
 help:
 	@echo "HELP"
@@ -27,5 +27,5 @@ single-audio:
 list-audio:
 	./mp42mp3.sh
 
-.PHONY: single list single-audio list-audio
+.PHONY: help single list single-audio list-audio
 
