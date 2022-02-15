@@ -10,6 +10,5 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
     echo "Video $VIDEOURL title $VIDEOTITLE"
     COMMAND="./ytb2local/download.sh $VIDEOURL $VIDEOTITLE"
     echo "Executing download using $COMMAND"
-    eval "$COMMAND &"
+    eval "$COMMAND"
 done < "$1"
-
